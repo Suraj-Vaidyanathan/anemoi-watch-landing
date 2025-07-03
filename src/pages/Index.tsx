@@ -1,8 +1,8 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Activity, Waves, Wind } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const [hoveredCard, setHoveredCard] = useState<string | null>(null);
@@ -89,6 +89,12 @@ const Index = () => {
                 >
                   Cyclone Prediction
                 </a>
+                <Link
+                  to="/about"
+                  className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 hover:bg-indigo-50"
+                >
+                  About Team
+                </Link>
               </div>
             </div>
 
@@ -133,6 +139,12 @@ const Index = () => {
             >
               Cyclone Prediction
             </a>
+            <Link
+              to="/about"
+              className="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium hover:bg-indigo-50"
+            >
+              About Team
+            </Link>
           </div>
         </div>
       </nav>
@@ -183,6 +195,15 @@ const Index = () => {
               >
                 Learn More
               </Button>
+              <Link to="/about">
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="border-2 border-indigo-300 hover:border-indigo-500 px-8 py-3 rounded-full transition-all duration-300"
+                >
+                  About Team
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
