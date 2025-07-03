@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const About = () => {
   const teamMembers = [
     {
-      name: "Suraj",
+      name: "Suraj Vaidyanathan",
       role: "Machine Learning – Cyclone Prediction",
       icon: Activity,
       gradient: "from-purple-500 to-indigo-600",
@@ -15,7 +15,7 @@ const About = () => {
       contribution: "In this project, I focused on developing the cyclone prediction model using machine learning. After exploring various sources, I decided to use the INSAT3D Infrared Satellite Imagery from India Meteorological Department (IMD) as the training and validation dataset. I worked with infrared satellite images to train a neural network capable of estimating cyclone intensity and maximum wind speed. Using Python on Google Colab with packages like Torch, I learned to preprocess image data, implemented the Mean Squared Error loss function as the criterion for training, and fine-tuned the model to achieve reliable predictions. I also hosted the trained model on an Anvil web app to make it accessible for real-time estimation. This experience strengthened my understanding of deep learning for image-based tasks and taught me how to apply these techniques to a critical real-world problem. Collaborating with the team highlighted the importance of combining ML, electronics, and web development to deliver a practical early warning system for disaster preparedness."
     },
     {
-      name: "Krishna",
+      name: "Krishna N Rao",
       role: "Machine Learning – Earthquake Prediction",
       icon: Brain,
       gradient: "from-orange-500 to-red-600",
@@ -23,7 +23,7 @@ const About = () => {
       contribution: "For this project, I worked on developing the earthquake prediction model using machine learning. I focused on training [xgboost] in Python on Google Colab to analyze seismic and vibration data available from the government website NCS (National Centre for Seismology) and estimate earthquake risk levels. I learned to preprocess the input features, tune model parameters, and evaluate performance using metrics like Mean Squared Error to ensure accurate predictions. Additionally, I helped integrate the model into our web interface using Anvil so users could easily input sensor data and view results. I also learnt to make use of accelerometer for measuring the relative magnitude of the earthquake on the MMI scale. This experience deepened my understanding of applying ML to geophysical data and showed me how these tools can support real-time disaster preparedness. Collaborating with my teammates taught me the value of interdisciplinary work and clear communication in turning a technical model into a practical early warning solution."
     },
     {
-      name: "Samarth",
+      name: "Samarth Bijjal",
       role: "Electronics – Earthquake Detection",
       icon: Zap,
       gradient: "from-yellow-500 to-orange-600",
@@ -31,7 +31,7 @@ const About = () => {
       contribution: "As part of the project, I was responsible for designing and implementing the Earthquake Detection circuit using the ADXL335 accelerometer. I worked on interfacing the sensor with the Arduino, ensuring accurate connection of the X, Y, and Z output pins to the analog inputs, and writing Embedded C code to read and interpret the vibration data. This allowed us to simulate real-time detection of ground movements, which was then used as input for the machine learning model. Through this process, I developed a strong understanding of how MEMS-based sensors function and how hardware can be used to capture environmental signals for predictive analysis. The experience of troubleshooting connections and optimizing sensor output helped me appreciate the challenges and importance of reliable data acquisition in disaster prediction systems."
     },
     {
-      name: "Ishaan",
+      name: "Ishaan Parikh",
       role: "Electronics and Documentation – Flood Detection",
       icon: FileText,
       gradient: "from-green-500 to-teal-600",
@@ -39,7 +39,7 @@ const About = () => {
       contribution: "In this project, I worked on building the Flood Detection circuit using Arduino by connecting the DHT11 and Water Level Sensors to accurately capture temperature, humidity, and water level data for real-time monitoring. I wrote and uploaded Embedded C code in Arduino IDE to process the sensor readings and trigger alerts with the buzzer. Alongside the hardware work, I also led the effort to compile and organize the project documentation, ensuring all processes, methodologies, and results were clearly and professionally presented. This experience taught me the importance of precise circuit design and thorough documentation in delivering a reliable and replicable solution. Collaborating with my teammates highlighted the value of coordination and attention to detail in successfully completing a multidisciplinary project aimed at improving disaster preparedness."
     },
     {
-      name: "Kartik",
+      name: "Kartik Shekhar",
       role: "Machine Learning – Flood Prediction",
       icon: Waves,
       gradient: "from-blue-500 to-cyan-600",
