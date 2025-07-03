@@ -7,6 +7,13 @@ import { useState } from "react";
 const Index = () => {
   const [hoveredCard, setHoveredCard] = useState<string | null>(null);
 
+  const scrollToDisasters = () => {
+    const disastersSection = document.getElementById('disasters-section');
+    if (disastersSection) {
+      disastersSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const disasters = [
     {
       id: "earthquake",
@@ -16,7 +23,7 @@ const Index = () => {
       gradient: "from-orange-500 to-red-600",
       bgColor: "bg-orange-50",
       hoverColor: "hover:bg-orange-100",
-      link: "#", // Will be updated when user provides the actual link
+      link: "https://enormous-self-reliant-local.anvil.app/",
     },
     {
       id: "flood",
@@ -26,7 +33,7 @@ const Index = () => {
       gradient: "from-blue-500 to-cyan-600",
       bgColor: "bg-blue-50",
       hoverColor: "hover:bg-blue-100",
-      link: "#", // Will be updated when user provides the actual link
+      link: "https://likable-young-ibex.anvil.app",
     },
     {
       id: "cyclone",
@@ -36,7 +43,7 @@ const Index = () => {
       gradient: "from-purple-500 to-indigo-600",
       bgColor: "bg-purple-50",
       hoverColor: "hover:bg-purple-100",
-      link: "#", // Will be updated when user provides the actual link
+      link: "https://solid-any-form.anvil.app",
     },
   ];
 
@@ -72,7 +79,11 @@ const Index = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+                onClick={scrollToDisasters}
+              >
                 Get Started
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
@@ -80,6 +91,7 @@ const Index = () => {
                 variant="outline" 
                 size="lg" 
                 className="border-2 border-gray-300 hover:border-blue-500 px-8 py-3 rounded-full transition-all duration-300"
+                onClick={() => window.open("https://drive.google.com/drive/folders/1T8VifaYWnYEd9pwpXmqo0W4rqJ-td3_M?usp=sharing", "_blank")}
               >
                 Learn More
               </Button>
@@ -89,7 +101,7 @@ const Index = () => {
       </div>
 
       {/* Features Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div id="disasters-section" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Disaster Prediction Tools
@@ -155,18 +167,14 @@ const Index = () => {
       {/* Stats Section */}
       <div className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
             <div className="animate-fade-in">
-              <div className="text-4xl font-bold text-blue-600 mb-2">98%</div>
-              <div className="text-gray-600">Prediction Accuracy</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">High Accuracy</div>
+              <div className="text-gray-600">Prediction System</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <div className="text-4xl font-bold text-purple-600 mb-2">24/7</div>
               <div className="text-gray-600">Real-time Monitoring</div>
-            </div>
-            <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <div className="text-4xl font-bold text-green-600 mb-2">1M+</div>
-              <div className="text-gray-600">Lives Protected</div>
             </div>
           </div>
         </div>
