@@ -279,7 +279,7 @@ const Index = () => {
           <h3 className="text-2xl font-bold mb-4">Anemoi</h3>
           <p className="text-gray-400 mb-6">AI-Powered Disaster Prediction Platform</p>
           <p className="text-sm text-gray-500">
-            © 2024 Anemoi. All rights reserved. Built with advanced AI for disaster preparedness.
+            © 2025 Anemoi by Team Invictus. All rights reserved. Built with advanced AI for disaster preparedness.
           </p>
         </div>
       </footer>
