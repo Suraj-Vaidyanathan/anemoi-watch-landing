@@ -16,6 +16,16 @@ const Index = () => {
 
   const disasters = [
     {
+      id: "cyclone",
+      title: "Cyclone Prediction",
+      description: "Sophisticated storm tracking and cyclone intensity forecasting using satellite imagery and atmospheric data.",
+      icon: Wind,
+      gradient: "from-purple-500 to-indigo-600",
+      bgColor: "bg-purple-50",
+      hoverColor: "hover:bg-purple-100",
+      link: "https://solid-any-form.anvil.app",
+    },
+    {
       id: "earthquake",
       title: "Earthquake Prediction",
       description: "Advanced seismic analysis and earthquake forecasting using AI-powered geological data processing.",
@@ -34,16 +44,6 @@ const Index = () => {
       bgColor: "bg-blue-50",
       hoverColor: "hover:bg-blue-100",
       link: "https://likable-young-ibex.anvil.app",
-    },
-    {
-      id: "cyclone",
-      title: "Cyclone Prediction",
-      description: "Sophisticated storm tracking and cyclone intensity forecasting using satellite imagery and atmospheric data.",
-      icon: Wind,
-      gradient: "from-purple-500 to-indigo-600",
-      bgColor: "bg-purple-50",
-      hoverColor: "hover:bg-purple-100",
-      link: "https://solid-any-form.anvil.app",
     },
   ];
 
