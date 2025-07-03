@@ -44,7 +44,7 @@ const About = () => {
       icon: Waves,
       gradient: "from-blue-500 to-cyan-600",
       bgColor: "bg-blue-50",
-      contribution: "During this project, I focused on developing the flood prediction model using machine learning. I learned to work with historical and real-time data, training Decision Tree and Random Forest algorithms in Python on Google Colab to classify flood risk based on temperature, humidity, and water level inputs. I also explored how to deploy the model using Anvil to create an accessible web interface where users can view predictions. This experience taught me the practical steps of building, testing, and integrating an ML model into a user-facing application. Working with my teammates helped me appreciate the value of collaboration, clear communication, and combining electronics and software to deliver a complete early warning solution."
+      contribution: "During this project, I focused on developing the flood prediction model using machine learning. I learned to work with 100 years of historical flood data from the Indian Government and real-time data, training Decision Tree and Random Forest algorithms in Python on Google Colab to classify flood risk based on temperature, humidity, and water level inputs. I also explored how to deploy the model using Anvil to create an accessible web interface where users can view predictions. This experience taught me the practical steps of building, testing, and integrating an ML model into a user-facing application. Working with my teammates helped me appreciate the value of collaboration, clear communication, and combining electronics and software to deliver a complete early warning solution."
     }
   ];
 
