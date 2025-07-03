@@ -66,6 +66,14 @@ const Index = () => {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
                 <a
+                  href="https://solid-any-form.anvil.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 hover:bg-purple-50"
+                >
+                  Cyclone Prediction
+                </a>
+                <a
                   href="https://enormous-self-reliant-local.anvil.app/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -80,14 +88,6 @@ const Index = () => {
                   className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 hover:bg-blue-50"
                 >
                   Flood Prediction
-                </a>
-                <a
-                  href="https://solid-any-form.anvil.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 hover:bg-purple-50"
-                >
-                  Cyclone Prediction
                 </a>
                 <Link
                   to="/about"
